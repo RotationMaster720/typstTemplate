@@ -1,9 +1,10 @@
-#let namn = "Alvin Daniels"
+#let namn = "namn"
 #let mail = "mail"
-#let kurskod = "Kurskod"
+#let kurskod = "kurskod"
 #let kursnamn = "kursnamn"
 #let doctyp = "??"
 
+// Functions
 #let mattr(..columns) = math.mat(..array.zip(..columns))
 
 #let numbered_eq(content) = math.equation(
@@ -30,17 +31,9 @@
 
 #show math.equation: set block(breakable: true)
 
-
-
-#let rub(content,lvl) = heading(
-  numbering: "1.",
-  level: lvl,
-  offset: 12,
-  content
-)
 #set math.mat(delim:"[")
 #set math.vec(delim:"[")
-#set heading(supplement: [Sektion])
+
 #set enum(
    tight: false,
    spacing:0.7cm,
