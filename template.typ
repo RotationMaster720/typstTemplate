@@ -1,5 +1,5 @@
 #let namn = "Alvin Daniels"
-#let mail = "alvind@kth.se"
+#let mail = "mail"
 #let kurskod = "Kurskod"
 #let kursnamn = "kursnamn"
 #let doctyp = "??"
