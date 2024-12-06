@@ -24,6 +24,12 @@
   fill: red,
   [\ \ #emoji.bomb #emoji.a #emoji.a #emoji.a #emoji.bomb \ \ .])]
 
+#let cbox(content, caption) = figure(caption: caption, supplement: [Kodblock.],
+    box(outset: 0.5em,radius: 0.5em, fill: gray.lighten(90%), stroke: 0.05em,
+    content
+    ) + v(0.2cm)
+)
+
 #set text(lang: "sv")
 #set par(justify: true)
 #set text(hyphenate: false)
