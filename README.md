@@ -14,6 +14,7 @@ Längst upp kan man välja
 - doctyp: typen av text som sträng, ex: "Rapport", "Seminarie 1", eller "Rop på hjälp"
 
 Det finns också några extra funktioner som läggs till
+
 *#fancy()*
 Kallas i matteläge och ger en fancy font på bokstaven, bra för t.ex. rieman-stiltjes integrerbar.
 
