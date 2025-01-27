@@ -24,3 +24,4 @@ tar content if []-form, ger en stor röd ruta som visar att något måste göras
 *#cbox(content, caption)*
 content: Koden ni vill ha med fnuttar i ett block [].
 caption: den caption ni vill ha i [].
+Exempel #cbox([\```rust f = @(x) x^2 \```], [avancerad funktion])
