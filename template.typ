@@ -65,7 +65,8 @@
 
   *#kurskod \ 
   #kursnamn \
-  #doctyp*
+  #doctyp \
+  #datetime.today().display()*
 ])
 \
 #line(
@@ -84,7 +85,7 @@
     #link(mailLink)
   ]
 )
-\ \ \ \ \ \ \ 
+\ \ \ \ \
 \ // Lätt justering av utseende
 
 #counter(page).update(0)
