@@ -35,7 +35,7 @@
     ) + v(0.2cm)
 )
 
-/ Visual settings
+// Visual settings
 #set text(lang: "sv")
 #set math.equation(supplement: none, numbering: (..nums) => numbering("(1.1)", ..nums))
 #set par(justify: true)
@@ -107,7 +107,7 @@
     align: (left, center, right),
     [
   ] 
-    , [#kurskod --- #kursnamn \ - #namn -], [ \ #counter(page).display(
+    , [#kurskod --- #kursnamn \ - #personer.map((p) => p.namn).join(", ") - ], [ \ #counter(page).display(
     "1 / 1", both: true)
 ],
 )
