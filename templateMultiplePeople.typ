@@ -5,6 +5,11 @@
         namn: "namn",
         mail: "namn@jagcool.se",
     ),
+    (
+        namn: "namn2",
+        mail: "namn@jagmedcool.se",
+    ),
+
 //Keep going here if more people needed
 )
 #let kurskod = "kurskod"
