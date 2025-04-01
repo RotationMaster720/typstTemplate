@@ -9,6 +9,7 @@ Kör ni online, ladda upp Kth.png i mappen för filer. (funkar att bara dra in f
 Längst upp kan man välja
 - namn: ert namn som en sträng ex. "Göran Pil"
 - mail: er mail, rimligtvis kth-mailen, som sträng ex: "goran@kth.se"
+-- För fler personer, gör en likadan med dennes namn direkt efter ett komma-tecken
 - kurskod: kurskoden som sträng, ex: "SF9999"
 - kursnamn: kursens namn som sträng, ex: "Super komplicerad och knasig analys FK", Notera att om strängen är för lång kommer det bli knas, så förkorta lite om möjligt.
 - doctyp: typen av text som sträng, ex: "Rapport", "Seminarie 1", eller "Rop på hjälp"
