@@ -1,18 +1,18 @@
-#let namn = "namn"
-#let mail = "mail"
+#import "@preview/equate:0.2.1" : equate
+
+#let personer = (
+    (
+        namn: "namn",
+        mail: "namn@jagcool.se",
+    ),
+//Keep going here if more people needed
+)
 #let kurskod = "kurskod"
 #let kursnamn = "kursnamn"
 #let doctyp = "??"
 
 // Functions
 #let mattr(..columns) = math.mat(..array.zip(..columns))
-
-#let numbered_eq(content) = math.equation(
-    block: true,
-    supplement: [Ekv.],
-    numbering: "(1)",
-    content,
-)
 
 #let fancy(content) = text(
   font: "TeX Gyre Chorus",
@@ -30,10 +30,11 @@
     ) + v(0.2cm)
 )
 
+/ Visual settings
 #set text(lang: "sv")
+#set math.equation(supplement: none, numbering: (..nums) => numbering("(1.1)", ..nums))
 #set par(justify: true)
 #set text(hyphenate: false)
-#counter(page).update(0)
 
 #show math.equation: set block(breakable: true)
 
@@ -59,6 +60,9 @@
      }
   }
 )
+
+//First side
+#counter(page).update(0)
 #align(center + horizon, text(17pt)[#image("Kth.png", width: 20%)])
 
 #align(center + horizon, text(17pt)[
@@ -75,15 +79,13 @@
   stroke:1.5pt
 ) 
 \
-#let mailLink = "mailto:" + mail
-
 #grid(
-  columns: (1fr, 0fr),
-  align(center)[
-    #namn \
-    Kungliga Tekniska Högskolan \
-    #link(mailLink)
-  ]
+  columns: (1fr, 1fr),
+  ..personer.map((p) => align(center)[
+      #p.namn \
+      Kungliga Tekniska Högskolan \
+      #link("mailto:"+p.mail)\
+  ]),
 )
 \ \ \ \ \
 \ // Lätt justering av utseende
@@ -109,3 +111,4 @@
   ]
 )
 #pagebreak()
+// Start of document
